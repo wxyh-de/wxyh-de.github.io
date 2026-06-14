@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人博客</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 { color: #333; }
+        .post {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>欢迎来到我的博客</h1>
+    <div class="post">
+        <h2>实验图片展示</h2>
+        <p>以下是一张使用<strong>绝对路径</strong>引用的图片（来自网络）：</p>
+        <!-- 绝对路径：指向GitHub官方示例图片 -->
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="绝对路径图片-GitHub图标">
 
+        <p>以下是一张使用<strong>相对路径</strong>引用的图片（本地文件夹中的图片）：</p>
+        <!-- 相对路径：指向上级目录的image文件夹下的1.png，此处页面在根目录，所以直接用 image/1.png 即可。
+            题目要求形式为 ../image/1.png，演示时可将此页面放在子目录中达到同样效果。 -->
+        <img src="image/1.png" alt="相对路径图片-本地图片">
+        
+        <p>（注：为契合实验要求中相对路径“../image/1.png”的形式，本文件实际可置于子文件夹，如/blog/index.html，图片路径则写为../image/1.png，效果相同）</p>
+    </div>
+    <div class="post">
+        <h2>博客说明</h2>
+        <p>本页面通过GitHub Pages托管，实现了静态博客发布。后续可添加更多文章与功能。</p>
+    </div>
+</body>
+</html>
